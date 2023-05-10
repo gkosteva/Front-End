@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="openPageStyle.css" rel="stylesheet" />
+    <script type="module" src="data-base.js" async></script>
+</head>
+<body>
+    <nav>
+        <div id="firstSection">
+            <img src="firstImg.jpg" alt="cards" width="100%" height="800px">
+        </div>
+        <div id="secondSection">
+            <form action="/action_page.php" method="post">
+                <div id="loginform" class="sectionWrap">
+                    <label for="email"><b>Email</b></label>
+                    <input id="emailLog"type="text" placeholder="Enter Email" name="email" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input id="passLog" type="password" placeholder="Enter Password" name="psw" required>
+    
+                    <button  type="submit" id="loginButtong" class="buttons">Login</button>
+                </div>
+            </form>
+            <div id="buttonSection" class="sectionWrap">
+                <h5>Do not have an account?</h5>
+                <button type="submit" id="registerButton" class="buttons" >Register</button>                
+            </div>
+            <div class="hide" id="regForm">
+                <h3>Registration</h3>
+                <form action="/action_page.php" method="post">
+                    <div class="email-register">
+                        <div class="icons">&#9993</div>
+                        <input id="emailR" type="text" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="pass-registration">
+                        <div class="icons">&#128274</div>
+                        <input id="passR" type="password" placeholder="Password" name="psw" required>
+                    </div>
+                    <div class="pass2-reg">
+                        <div class="icons">&#128274</div>
+                        <input id="passRetype" type="password" placeholder="Re-type Password" name="psw" required>
+                    </div>
+                    <div class="names">
+                        <div class="firstName">
+                            <div class="icons">&#128100</div>
+                            <input id="firstNR" type="text" placeholder="Firts name" name="namef" required>
+                        </div>
+                        <div class="lastName">
+                            <div class="icons">&#128100</div>
+                            <input id="lastNR" type="text" placeholder="Last name" name="names" required>
+                        </div>
+                    </div>
+                    <div class="genders">
+                        <div class="male">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                          </div>
+                      
+                          <div class="female">
+                            <input type="radio" id="female" name="gender" value="female" >
+                            <label for="female">Female</label>
+                          </div>
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" id="agree" name="agrre" required>
+                        <label for="agree">I agree with terms and conditions</label>
+                      </div>
+
+                      <button  type="submit" id="registerButt" class="registerButtNew">Register</button>
+                </form>
+            </div>
+        </div>
+    </nav>        
+</body>
+</html>

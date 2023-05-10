@@ -1,0 +1,69 @@
+/* Codepen Specific */
+* {
+    margin:0;
+    padding:0;
+    font-family:Helvetica, Arial, sans-serif;
+  }
+
+.container-wrap{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rankings{
+    border: 2px solid black;
+    width: 300px;
+    background-color: white;
+}
+    #leaderboard {
+        padding:50px;
+    }
+    
+  .leaderboard-results {
+    text-align:left;
+    border-collapse: collapse;
+  }
+  .leaderboard-results thead th {
+    padding: 25px;
+    color:#747474;
+    font-size:14px;
+    font-weight:bold;
+  }
+  .leaderboard-results tbody td {
+    padding:15px 25px;
+    background:white;
+    font-size:16px;
+    border-bottom:1px solid #232323;
+    border-top: 1px solid #232323;
+  }
+  .leaderboard-results tbody td:nth-of-type(7) {
+    font-weight:bold;
+  }
+  .leaderboard-results tbody tr:hover td {
+      background:#7cb07c;
+  }
+  .leaderboard-results tbody tr {
+    color:black;
+  }
+  .leaderboard-results tbody tr:first-child {
+    color:#d40000;
+  }
+  .leaderboard-results tbody span {
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:50%;
+  }
+ 
+  #dort{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+  }
+  #dort:hover{
+    background-color: #f2d2ab;
+  }

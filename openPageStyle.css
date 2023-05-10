@@ -1,0 +1,113 @@
+nav{
+    padding: 0;
+	margin: 0;
+	display: flex;
+}
+nav #firstSection{
+    flex: 2.5;
+}
+#secondSection{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, #f4bd76, #e5e7e9) ;
+}
+.buttons{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #22577a;
+    background-color: #22577a;
+    font-style: italic;
+    color: white;
+    margin: 5px;    
+    box-shadow: 0 9px #999;
+}
+#buttonSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionWrap{
+margin: 20px;
+}
+#loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .buttons:hover, .registerButtNew:hover {
+    opacity: 0.8;
+  }
+  .buttons:active {
+    background-color: #23481d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  h5{
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+  .registerForm{
+    background:linear-gradient(to bottom, #f4bd76, #e5e7e9) ;
+    height: 690px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .email-register, .pass-registration, .pass2-reg, .genders, .firstName, .lastName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .names{
+    display: flex;
+    justify-content: space-between;
+  }
+  .registerButtNew:active {
+    background-color: #23481d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .registerButtNew{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #22577a;
+    background-color: #22577a;
+    color: white;
+    margin: 5px;          
+    box-shadow: 0 9px #999;
+  }
+  .icons{
+    border: 1px solid lightgray;
+    background-color: white;
+    height: 35px;
+    width: 20px;
+    border-right: none;
+    padding-top: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .icons:hover{
+    background-color: lightgray;
+  }
+  .hide{
+    display: none;
+  }

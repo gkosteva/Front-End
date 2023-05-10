@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module"src="game.js" async> </script>
+    <script type="module"src="homePage.js" defer> </script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="game.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div class="header-body">
+            <div class="first-menu">
+                <img class="logoImg" src="logo.png" alt="cards">
+                <div class="game-name-logo">Flip card</div>
+            </div>
+                <div class="menu">
+                    <div class="home-page-butt" >Home page</div>
+                    <div class="ranking-butt">Rank</div>
+                    <div>
+                        <img class="userImg" src="user.png" alt="user">
+                        <div class="rollDown">
+                            <img class="userImg" src="user.png" alt="user">
+                            <a class="logOut">Log out</a>
+                            <a class="profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="overlay-butt visible">Start Game</div>
+        <div id="gameOver" class="overlay-butt">Game Over!
+            <div class="overlay-butt-small">Click to restart</div>
+        </div>
+        <div id="victory" class="overlay-butt">You won!
+            <div class="overlay-butt-small">Click to restart</div>
+        </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time: <span id="time-remaining">100</span>
+                </div>
+                <div class="game-info">
+                    Flips: <span id="flips">0</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value"src="./PNG-cards-1.3/jack_of_diamonds2.png" id="1" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/jack_of_diamonds2.png" id="2" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/jack_of_hearts2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/jack_of_hearts2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/king_of_hearts2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/king_of_hearts2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/king_of_diamonds2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/king_of_diamonds2.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/ace_of_spades.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/ace_of_spades.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/ace_of_clubs.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/ace_of_clubs.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/2_of_clubs.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/2_of_clubs.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/2_of_spades.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="card-back-red.png" alt="card-back"  style="width:100px;height:120px;">
+                    </div>
+                    <div class="card-back">
+                        <img class="card-value" src="./PNG-cards-1.3/2_of_spades.png" alt="king"  style="width:100px;height:120px;">
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer-body">
+            <div class="logos-inst-face">
+                <img src="instagram.png" alt="instagram">
+                <img src="facebook.png" alt="facebook">
+            </div>
+            <div class="footer-about">
+                <div>About</div>
+                <div>Help</div>
+                <div>Learn</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
